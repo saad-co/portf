@@ -1,4 +1,4 @@
-import { Screen01SVG } from "@/public/images";
+import { Screen01SVG } from "@/assets/images";
 import Image from "next/image";
 export default function Screen01() {
     return (
