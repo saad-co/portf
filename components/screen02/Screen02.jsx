@@ -12,7 +12,7 @@ export default function Screen02() {
                         width={675}
                         height={600}
                         className="rounded-3xl"
-                    />
+                    /> 
                 </div>
                 <div className="md:w-1/2 pt-12 self-center">
                     <div className="flex flex-col gap-2">
