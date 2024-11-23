@@ -4,7 +4,7 @@ export default function Screen01() {
     return (
         <section className="flex min-h-screen bg-main bg-no-repeat bg-cover items-center h-screen">
             <div className="max-w-7xl mx-auto flex justify-between w-full">
-                <div className="w-1/2 flex flex-col gap-7 pt-36">
+                <div className="w-1/2 flex flex-col justify-center gap-7 pt-36">
                     <h1 className="text-customYellow text-5xl">
                         TRANSFORMING YOUR VISION
                         INTO AN EPIC CREATION

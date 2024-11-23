@@ -1,10 +1,14 @@
 /** @type {import('tailwindcss').Config} */
+import fluid, { extract, screens, fontSize } from "fluid-tailwind";
 module.exports = {
-  content: [
-    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
-  ],
+  content: {
+    files: [
+      "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+      "./components/**/*.{js,ts,jsx,tsx,mdx}",
+      "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    ],
+    extract,
+  },
   theme: {
     extend: {
       colors: {
@@ -22,6 +26,8 @@ module.exports = {
         'dark-gradient': 'linear-gradient(359.71deg, #191914 29.36%, #483E35 136.63%)',
       },
     },
+    screens,
+    fontSize,
   },
-  plugins: [],
+  plugins: [fluid],
 };
