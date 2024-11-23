@@ -3,9 +3,9 @@ import Image from "next/image";
 
 export default function Screen02() {
     return (
-        <section className="flex rounded-t-[120px] min-h-screen bg-dark-gradient items-center h-screen">
-            <div className="max-w-7xl gap-16 mx-auto flex items-center justify-between w-full">
-                <div className="w-1/2 pt-20">
+        <section className="flex rounded-t-3xl md:rounded-t-[120px] bg-dark-gradient items-center">
+            <div className="max-w-7xl ~px-4/8 ~gap-8/16 mx-auto flex flex-col-reverse justify-center items-center md:flex-row md:items-center md:justify-between w-full">
+                <div className="md:w-1/2 ~pt-2/20">
                     <Image
                         src={Screen02SVG}
                         alt="Screen02SVG"
@@ -14,10 +14,10 @@ export default function Screen02() {
                         className="rounded-3xl"
                     />
                 </div>
-                <div className="w-1/2 self-center">
+                <div className="md:w-1/2 pt-12 self-center">
                     <div className="flex flex-col gap-2">
-                        <h1 className="text-[53px] font-semibold w-full">FROM IDEAS TO <span className="text-[#FF000D]">REALITY</span></h1>
-                        <p className="text-[#FF000D] text-3xl">ABOUT US</p>
+                        <h1 className="~text-3xl/5xl font-semibold w-full">FROM IDEAS TO <span className="text-[#FF000D]">REALITY</span></h1>
+                        <p className="text-[#FF000D] ~text-xl/3xl">ABOUT US</p>
                     </div>
                     <div className="flex flex-col gap-2 pt-4">
                         <p>

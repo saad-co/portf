@@ -2,17 +2,17 @@ import { Screen01SVG } from "@/assets/images";
 import Image from "next/image";
 export default function Screen01() {
     return (
-        <section className="flex min-h-screen bg-main bg-no-repeat bg-cover items-center h-screen">
-            <div className="max-w-7xl mx-auto flex justify-between w-full">
-                <div className="w-1/2 flex flex-col justify-center gap-7 pt-36">
-                    <h1 className="text-customYellow text-5xl">
+        <section className="flex bg-main bg-no-repeat bg-cover items-center">
+            <div className="max-w-7xl ~px-4/8 mx-auto flex flex-col-reverse items-center sm:flex-row sm:justify-between w-full">
+                <div className="sm:w-1/2 pb-10 flex flex-col justify-center gap-7 sm:pt-36">
+                    <h1 className="text-customYellow w-full ~text-3xl/5xl">
                         TRANSFORMING YOUR VISION
                         INTO AN EPIC CREATION
                     </h1>
-                    <p>
+                    <p className="~text-base/xl">
                         We understand the expectations of gamers of today, thus creating games that involve the latest trends of technology and expertise including Metaverse/NFT/Blockchain
                     </p>
-                    <ol className="list-disc pl-5 pt-3">
+                    <ol className="list-disc pl-5 pt-3 ~text-base/xl">
                         <li>NFT/Blockchain Games</li>
                         <li>Mobile/Web Games</li>
                         <li>PC/Console Games</li>
@@ -24,12 +24,11 @@ export default function Screen01() {
                         </button>
                     </div>
                 </div>
-                <div className="w-1/2 pt-36">
+                <div className="sm:w-1/2 ~pt-12/36">
                     <Image
                         src={Screen01SVG}
                         alt="Screen01SVG"
-                        width={679}
-                        height={679}
+                        className="~w-[323]/[679] ~h-[323]/[679]"
                     />
                 </div>
             </div>
