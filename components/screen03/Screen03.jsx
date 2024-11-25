@@ -61,7 +61,7 @@ export const Screen03 = () => {
         const cards = containerRef.current.children;
         
         gsap.to(cards, {
-            xPercent: -100 * (cards.length - 1),
+            xPercent: -100 * (cards.length-0.5),
             ease: "none",
             scrollTrigger: {
                 trigger: sectionRef.current,
@@ -70,8 +70,7 @@ export const Screen03 = () => {
                 end: `+=${cards.length * 100}%`,
                 scrub: 1,
                 invalidateOnRefresh: true,
-                anticipatePin: 1,
-                snap: 1 / (cards.length - 1) // Optional: adds snapping to each card
+                anticipatePin: 1,                
             }
         });
     }, []);
