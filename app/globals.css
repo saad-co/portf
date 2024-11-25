@@ -14,11 +14,8 @@
   }
 }
 
-body {
+html,body {
   color: var(--foreground);
   background: var(--background);
-}
-
-html{
   overflow-x: hidden;
 }
