@@ -1,2 +1,10 @@
 export { default as Screen01SVG } from './screen01/screen01SVG.svg';
 export { default as Screen02SVG } from './screen02/sideImage.png';
+export { default as card01 } from './screen03/page03Card01.png';
+export { default as card02 } from './screen03/page03Card02.png';
+export { default as card03 } from './screen03/page03Card03.png';
+export { default as card04 } from './screen03/page03Card04.png';
+export { default as card05 } from './screen03/page03Card05.png';
+export { default as card06 } from './screen03/page03Card06.png';
+export { default as card07 } from './screen03/page03Card07.png';
+export { default as card08 } from './screen03/page03Card08.png';
