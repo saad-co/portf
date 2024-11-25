@@ -11,6 +11,15 @@ module.exports = {
   },
   theme: {
     extend: {
+      keyframes: {
+        scroll: {
+          '0%': { transform: 'translateY(0)' },
+          '90%': { transform: 'translateY(-50%)' }, // Adjust for seamless scrolling
+        },
+      },
+      animation: {
+        scroll: 'scroll 10s linear infinite',
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",

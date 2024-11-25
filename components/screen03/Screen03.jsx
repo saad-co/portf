@@ -59,9 +59,9 @@ export const Screen03 = () => {
 
     useGSAP(() => {
         const cards = containerRef.current.children;
-        
+
         gsap.to(cards, {
-            xPercent: -100 * (cards.length-0.5),
+            xPercent: -100 * (cards.length - 0.5),
             ease: "none",
             scrollTrigger: {
                 trigger: sectionRef.current,
@@ -70,34 +70,33 @@ export const Screen03 = () => {
                 end: `+=${cards.length * 100}%`,
                 scrub: 1,
                 invalidateOnRefresh: true,
-                anticipatePin: 1,                
+                anticipatePin: 1,
             }
         });
     }, []);
 
     return (
-        <section 
-            ref={sectionRef} 
-            className="flex rounded-t-3xl md:rounded-t-[120px] bg-page03-gradient items-center"
+        <section
+            ref={sectionRef}
+            className="flex flex-col rounded-t-3xl md:rounded-t-[120px] bg-page03-gradient items-center "
         >
             <div className="max-w-7xl ~px-4/8 pb-20 ~gap-8/16 mx-auto flex flex-col justify-center items-center w-full">
                 <h1 className='font-bold ~text-3xl/6xl text-customYellow mx-auto ~pt-10/24'>
                     WHAT WE DO
                 </h1>
-                
-                <div 
-                    ref={containerRef} 
+                <div
+                    ref={containerRef}
                     className="flex ~gap-8/16 w-full overflow-x-hidden rounded-3xl"
                 >
                     {json.map((item, index) => (
-                        <div 
-                            key={index} 
+                        <div
+                            key={index}
                             className="w-full flex-shrink-0"
                         >
-                            <Screen03CardComp 
-                                title={item.title} 
-                                description={item.description} 
-                                imgSrc={item.imgSrc} 
+                            <Screen03CardComp
+                                title={item.title}
+                                description={item.description}
+                                imgSrc={item.imgSrc}
                             />
                         </div>
                     ))}

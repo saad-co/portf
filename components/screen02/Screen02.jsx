@@ -3,8 +3,8 @@ import Image from "next/image";
 
 export default function Screen02() {
     return (
-        <section className="flex rounded-t-3xl md:rounded-t-[120px] bg-dark-gradient items-center ">
-            <div className="max-w-7xl md:pb-24 ~px-4/8 ~gap-8/16 mx-auto flex flex-col-reverse justify-center items-center md:flex-row md:items-center md:justify-between w-full">
+        <section className="flex rounded-t-3xl md:rounded-t-[120px] bg-dark-gradient items-center mb-[-30px] md:mb-[-90px]">
+            <div className="max-w-7xl md:pb-40 pb-20 ~px-4/8 ~gap-8/16 mx-auto flex flex-col-reverse justify-center items-center md:flex-row md:items-center md:justify-between w-full">
                 <div className="md:w-1/2 ~pt-2/20">
                     <Image
                         src={Screen02SVG}
