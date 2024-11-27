@@ -96,9 +96,9 @@ export default function Header() {
                         <p className="cursor-pointer">BLOGS</p>
                     </div>
                 </div>
-                <div className="md:flex hidden">
+                {/* <div className="md:flex hidden">
                     <button className="bg-white text-nowrap text-black font-bold text-sm ~px-8/12 ~py-2/3 rounded-[41px]">CONTACT US</button>
-                </div>
+                </div> */}
                 <div className="md:hidden block">
                     <IoMenu onClick={togleMenu} className="w-[45px] h-[20px]" />
                 </div>

@@ -22,3 +22,9 @@ export { default as i9 } from './screen04/9.png';
 export { default as i10 } from './screen04/10.png';
 export { default as i11 } from './screen04/11.png';
 export { default as i12 } from './screen04/12.png';
+
+//screen06
+export { default as pic1 } from "./screen06/pic2.svg";
+export { default as pic2 } from "./screen06/pic5.svg";
+export { default as pic3 } from "./screen06/pic8.svg";
+export { default as pic4 } from "./screen06/u.svg";
