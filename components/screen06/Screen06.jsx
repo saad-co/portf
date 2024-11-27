@@ -48,11 +48,11 @@ export const Screen06 = () => {
                         </button>
                     </div>
                 </div>
-                {["1", "2", "3", "4"].map((bgClass, index) => (
+                {["bg-card1", "bg-card2", "bg-card3", "bg-card4"].map((bgClass, index) => (
                     <div
                         key={index}
                         ref={(el) => refElem.current[index] = el}
-                        className={`bg-card${bgClass} h-96  md:min-h-screen sticky top-10 flex flex-col justify-center ~px-4/10 bg-no-repeat bg-contain w-full rounded-t-3xl md:rounded-[60px]`}
+                        className={`h-96 ${bgClass}  md:min-h-screen sticky top-10 flex flex-col justify-center ~px-4/10 bg-no-repeat bg-contain w-full rounded-t-3xl md:rounded-[60px]`}
                     >
                         <div className="flex flex-col h-full pt-28 md:~pt-60/96">
                             <h1 className="~text-2xl/6xl font-bold">YOUNG WARRIOR</h1>
