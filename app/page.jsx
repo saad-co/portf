@@ -9,9 +9,9 @@ export default function Home() {
   return (
     <div>
       <Screen01 />
-      {/* <Screen02 />
+      <Screen02 />
       <Screen03 />
-      <Screen04 /> */}
+      <Screen04 />
       <Screen05 />
       <Screen06 />
     </div>
