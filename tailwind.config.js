@@ -35,6 +35,7 @@ module.exports = {
         'dark-gradient': 'linear-gradient(359.71deg, #191914 29.36%, #483E35 136.63%)',
         'page03-gradient': 'linear-gradient(178.27deg, #3E0104 3.55%, #1E0303 88.75%)',
         'page03-cardGradient': 'linear-gradient(180deg, #FDAA21 0%, #6B0C0C 100%)',
+        'page08-gradient': 'linear-gradient(359.26deg, #650206 0.63%, #FFD258 328.52%)',
         s5: "url('/images/screen05/bg.png')",
         card1: 'url(/images/screen06/1.png)',
         card2: 'url(/images/screen06/2.png)',

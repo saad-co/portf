@@ -52,7 +52,7 @@ export const Screen06 = () => {
                     <div
                         key={index}
                         ref={(el) => refElem.current[index] = el}
-                        className={`h-96 ${bgClass}  md:min-h-screen sticky top-10 flex flex-col justify-center ~px-4/10 bg-no-repeat bg-contain w-full rounded-t-3xl md:rounded-[60px]`}
+                        className={`h-96 ${bgClass}  md:min-h-screen sticky top-10 flex flex-col justify-center ~px-4/20 bg-no-repeat bg-contain w-full rounded-t-3xl md:rounded-[60px]`}
                     >
                         <div className="flex flex-col h-full pt-28 md:~pt-60/96">
                             <h1 className="~text-2xl/6xl font-bold">YOUNG WARRIOR</h1>
@@ -66,22 +66,22 @@ export const Screen06 = () => {
                                     <Image
                                         src={pic1}
                                         alt="icons"
-                                        className="w-7 h-7 sm:w-16 sm:h-16 md:w-14 md:h-14"
+                                        className="w-7 h-7 md:w-9 md:h-9"
                                     />
                                     <Image
                                         src={pic2}
                                         alt="icons"
-                                        className="w-7 h-7 sm:w-16 sm:h-16 md:w-14 md:h-14"
+                                        className="w-7 h-7 md:w-9 md:h-9"
                                     />
                                     <Image
                                         src={pic3}
                                         alt="icons"
-                                        className="w-7 h-7 sm:w-16 sm:h-16 md:w-14 md:h-14"
+                                        className="w-7 h-7 md:w-9 md:h-9"
                                     />
                                     <Image
                                         src={pic4}
                                         alt="icons"
-                                        className="w-7 h-7 sm:w-16 sm:h-16 md:w-14 md:h-14"
+                                        className="w-7 h-7 md:w-9 md:h-9"
                                     />
                                 </div>
 

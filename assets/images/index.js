@@ -28,3 +28,8 @@ export { default as pic1 } from "./screen06/pic2.svg";
 export { default as pic2 } from "./screen06/pic5.svg";
 export { default as pic3 } from "./screen06/pic8.svg";
 export { default as pic4 } from "./screen06/u.svg";
+
+//screen07
+export { default as firCard } from "./screen07/card1.png";
+export { default as secCard } from "./screen07/card2.png";
+export { default as thirdCard } from "./screen07/card3.png";
