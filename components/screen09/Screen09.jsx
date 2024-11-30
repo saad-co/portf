@@ -1,6 +1,5 @@
 'use client'
 import React, { useState } from 'react'
-import InputBox from './inputBox';
 
 export const Screen09 = () => {
     const [formData, setFormData] = useState({
