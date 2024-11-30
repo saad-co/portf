@@ -6,7 +6,7 @@ import Image from 'next/image';
 export const CardComp = ({ imgSrc, title, short, desc, btnText01, btnText02 }) => {
     return (
         <div className="w-full rounded-3xl flex flex-col items-start gap-5">
-            <div className="flex border rounded-3xl p-1 border-white flex-col-reverse md:flex-row items-center justify-between">
+            <div className="flex border rounded-3xl p-1 border-white flex-col gap-5 md:gap-0 md:flex-row items-center justify-between">
                 <div className="w-full md:w-1/2 flex justify-center md:justify-start">
                     <div className="max-w-lg w-full">
                         <Image
@@ -14,26 +14,26 @@ export const CardComp = ({ imgSrc, title, short, desc, btnText01, btnText02 }) =
                             alt="Mobile Game Development"
                             width={480}
                             height={480}
-                            className="rounded-xl object-cover w-[480] h-[480]"
+                            className="rounded-xl object-cover md:w-[480] md:h-[480]"
                         />
                     </div>
                 </div>
-                <div className="w-full text-center md:text-start md:w-1/2 flex flex-col justify-center space-y-4 md:space-y-6 text-white">
+                <div className="w-full px-2 text-center gap-3 md:text-start md:w-1/2 flex flex-col justify-center text-white">
                     <div className='flex items-center justify-start gap-3'>
                         <div className='flex items-center px-2 py-2 justify-center bg-white rounded-full'>
-                            <LiaUserEditSolid className='w-10 h-10 text-black' />
+                            <LiaUserEditSolid className='md:w-10 md:h-10 w-7 h-7 text-black' />
                         </div>
                         <div className='flex flex-col items-center justify-center'>
-                            <h1 className='text-start w-full text-xl font-extrabold'>
+                            <h1 className='text-start w-full ~text-sm/xl font-extrabold'>
                                 MUHAMMAD FURQAAN
                             </h1>
-                            <p className='text-start w-full'>
+                            <p className='text-start w-full text-[8px] md:text-sm'>
                                 NOVEMBER 14, 2024 - 9:08 AM
                             </p>
                         </div>
                     </div>
-                    <div className='flex flex-col gap-1'>
-                        <h1 className='~text-2xl/4xl font-extrabold'>
+                    <div className='flex flex-col gap-4 w-full'>
+                        <h1 className='~text-2xl/4xl text-start font-extrabold w-full'>
                             {title || "MOBILE GAME DEVELOPMENT"}
                         </h1>
                         <div className='flex items-center gap-2'>
@@ -42,12 +42,12 @@ export const CardComp = ({ imgSrc, title, short, desc, btnText01, btnText02 }) =
                                 {short || "WE SPECIALIZE IN CREATING ENGAGING AND INNOVATIVE MOBILE GAMES THAT CAPTIVATE PLAYERS WORLDWIDE. FROM CASUAL PUZZLES TO HIGH-PERFORMANCE RPGS, OUR GAMES ARE TAILORED TO DELIVER UNIQUE EXPERIENCES ON IOS AND ANDROID. LET'S BRING YOUR MOBILE GAMING VISION TO LIFE!"}
                             </p>
                         </div>
-                        <p className='text-sm'>
+                        <p className='text-sm text-start'>
                             {desc}
                         </p>
-                        <div className='flex justify-end w-full'>
-                            <div className="bg-gold-gradient hidden md:block w-fit py-1 px-3 rounded-[47px]">
-                                <button className="bg-custom-gradient text-sm px-10 py-4 rounded-[47px]">
+                        <div className='flex justify-center mx-auto w-full pb-3 md:pb-0'>
+                            <div className="bg-gold-gradient w-fit py-1 px-1 rounded-[47px]">
+                                <button className="bg-custom-gradient text-sm px-6 py-2 rounded-[47px]">
                                     READ MORE
                                 </button>
                             </div>
@@ -55,11 +55,11 @@ export const CardComp = ({ imgSrc, title, short, desc, btnText01, btnText02 }) =
                     </div>
                 </div>
             </div>
-            <div className="flex items-center justify-center gap-4 w-1/3">
-                <button className="flex-1 py-4 px-5 border border-white rounded-3xl text-sm min-w-32">
+            <div className="flex items-center justify-center gap-4 md:w-1/3">
+                <button className="flex-1 py-4 px-5 border border-white rounded-3xl text-sm md:min-w-40 min-w-44">
                     {btnText01}
                 </button>
-                <button className="flex-1 py-4 px-5 border border-white rounded-3xl text-sm min-w-32">
+                <button className="flex-1 py-4 px-5 border border-white rounded-3xl text-sm md:min-w-40 min-w-44">
                     {btnText02}
                 </button>
             </div>

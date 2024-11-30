@@ -99,7 +99,7 @@ export default function Header() {
                     <button className="bg-white text-nowrap text-black font-bold text-sm ~px-8/12 ~py-2/3 rounded-[41px]">CONTACT US</button>
                 </div>
                 <div className="md:hidden block">
-                    <IoMenu onClick={togleMenu} className="w-[45px] h-[20px]" />
+                    <IoMenu onClick={togleMenu} className="w-[65px] h-[30px]" />
                 </div>
             </div>
             <div id="menu-overlay" className="opacity-0 fixed top-0 left-0 w-full bg-main bg-no-repeat bg-cover md:hidden">
