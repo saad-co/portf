@@ -83,12 +83,11 @@ export default function Header() {
                 <Image
                     src={'/images/general/logo.svg'}
                     alt="logo"
-                    width={100}
+                    width={200}
                     height={100}
-                    className="w-[204px] h-[34px]"
                 />
                 <div className="md:flex hidden items-center ~gap-8/16">
-                    <div className="flex items-center ~gap-6/14 ~text-sm/lg font-light">
+                    <div className="flex items-center ~gap-6/14 ~text-sm/xl font-light">
                         <p className="cursor-pointer text-customYellow">HOME</p>
                         <p className="cursor-pointer  text-nowrap">ABOUT US</p>
                         <p className="cursor-pointer">SERVICES</p>
@@ -96,9 +95,9 @@ export default function Header() {
                         <p className="cursor-pointer">BLOGS</p>
                     </div>
                 </div>
-                {/* <div className="md:flex hidden">
+                <div className="md:flex hidden">
                     <button className="bg-white text-nowrap text-black font-bold text-sm ~px-8/12 ~py-2/3 rounded-[41px]">CONTACT US</button>
-                </div> */}
+                </div>
                 <div className="md:hidden block">
                     <IoMenu onClick={togleMenu} className="w-[45px] h-[20px]" />
                 </div>
