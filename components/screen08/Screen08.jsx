@@ -9,7 +9,7 @@ export const Screen08 = () => {
                     <div className='flex flex-col items-center gap-10 ~pt-20/52'>
                         <div className='w-32 h-32 rounded-full bg-white'></div>
                         <div className='text-center'>
-                            <h1 className='text-[#FFD258] '>
+                            <h1 className='text-[#FFD258] ~text-2xl/3xl'>
                                 DR. MIAN MUHAMMAD MUBASHIR
                             </h1>
                             <p className='~text-base/xl'>
