@@ -6,7 +6,7 @@ import Image from 'next/image';
 export const CardComp = ({ imgSrc, title, short, desc, btnText01, btnText02 }) => {
     return (
         <div className="w-full rounded-3xl flex flex-col items-start gap-5">
-            <div className="flex border rounded-3xl p-1 border-white flex-col gap-5 md:gap-0 md:flex-row items-center justify-between">
+            <div className="flex border rounded-3xl w-full p-1 border-white flex-col gap-5 md:gap-0 md:flex-row items-center justify-between">
                 <div className="w-full md:w-1/2 flex justify-center md:justify-start">
                     <div className="max-w-lg w-full">
                         <Image
@@ -14,7 +14,7 @@ export const CardComp = ({ imgSrc, title, short, desc, btnText01, btnText02 }) =
                             alt="Mobile Game Development"
                             width={480}
                             height={480}
-                            className="rounded-xl object-cover md:w-[480] md:h-[480]"
+                            className="rounded-xl object-cover w-full h-full md:w-[480] md:h-[480]"
                         />
                     </div>
                 </div>
@@ -55,15 +55,14 @@ export const CardComp = ({ imgSrc, title, short, desc, btnText01, btnText02 }) =
                     </div>
                 </div>
             </div>
-            <div className="flex items-center justify-center gap-4 md:w-1/3">
-                <button className="flex-1 py-4 px-5 border border-white rounded-3xl text-sm md:min-w-40 min-w-44">
+            <div className="flex items-center w-full justify-center gap-4 md:w-1/3">
+                <button className="flex-1 w-full md:w-auto py-4 ~px-3/5 border border-white rounded-3xl ~text-xs/sm">
                     {btnText01}
                 </button>
-                <button className="flex-1 py-4 px-5 border border-white rounded-3xl text-sm md:min-w-40 min-w-44">
+                <button className="flex-1 w-full md:w-auto py-4 ~px-3/5 border border-white rounded-3xl ~text-xs/sm">
                     {btnText02}
                 </button>
             </div>
-
         </div >
     )
 }

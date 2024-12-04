@@ -37,7 +37,7 @@ export const Screen07 = () => {
                 <h1 className='font-bold text-center md:text-start ~text-5xl/8xl text-customYellow ~pt-10/24'>
                     <span className='font-normal text-[#BE030C]'>LATEST</span> BLOGS
                 </h1>
-                <div className=" flex flex-col gap-9">
+                <div className=" flex flex-col gap-9 w-full">
                     {jsonData.map((data, index) => (
                         <CardComp key={index} {...data} />
                     ))}
