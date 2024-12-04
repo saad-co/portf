@@ -86,7 +86,7 @@ export const Screen03 = () => {
                 </h1>
                 <div
                     ref={containerRef}
-                    className="flex ~gap-8/16 w-full overflow-x-hidden rounded-3xl"
+                    className="flex items-stretch ~gap-8/16 w-full overflow-x-hidden rounded-3xl"
                 >
                     {json.map((item, index) => (
                         <div
