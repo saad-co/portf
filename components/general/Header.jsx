@@ -79,14 +79,14 @@ export default function Header() {
     }, [isMenuOpen]);
     return (
         <nav ref={container} className="absolute top-0 left-0 right-0 bg-transparent">
-            <div id="mblnav" className="max-w-7xl ~px-4/8 gap-20 mx-auto flex items-center justify-between ~pt-6/12">
+            <div id="mblnav" className="max-w-7xl ~px-4/8 mx-auto flex items-center justify-between ~pt-6/12">
                 <Image
                     src={'/images/general/logo.svg'}
                     alt="logo"
                     width={200}
                     height={100}
                 />
-                <div className="md:flex hidden items-center ~gap-8/16">
+                <div className="lg:flex hidden items-center ~gap-8/16">
                     <div className="flex items-center ~gap-6/14 ~text-sm/xl font-light">
                         <p className="cursor-pointer text-customYellow">HOME</p>
                         <p className="cursor-pointer  text-nowrap">ABOUT US</p>
@@ -95,10 +95,10 @@ export default function Header() {
                         <p className="cursor-pointer">BLOGS</p>
                     </div>
                 </div>
-                <div className="md:flex hidden">
+                <div className="lg:flex hidden">
                     <button className="bg-white text-nowrap text-black font-bold text-sm ~px-8/12 ~py-2/3 rounded-[41px]">CONTACT US</button>
                 </div>
-                <div className="md:hidden block">
+                <div className="lg:hidden block">
                     <IoMenu onClick={togleMenu} className="w-[65px] h-[30px]" />
                 </div>
             </div>

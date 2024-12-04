@@ -20,8 +20,8 @@ export const Screen06 = () => {
                     opacity: 0,
                     scrollTrigger: {
                         trigger: el,
-                        start: "top 5%",
-                        end: "bottom 20%",
+                        start: "top 0%",
+                        end: "bottom 10%",
                         scrub: true,
                         pin: true,
                     },
@@ -52,9 +52,9 @@ export const Screen06 = () => {
                     <div
                         key={index}
                         ref={(el) => refElem.current[index] = el}
-                        className={`h-96 ${bgClass}  md:min-h-screen sticky top-10 flex flex-col justify-center ~px-4/20 bg-no-repeat bg-contain w-full rounded-t-3xl md:rounded-[60px]`}
+                        className={`h-96 ${bgClass}  md:min-h-[calc(100vh-4rem)] sticky top-10 flex flex-col justify-center ~px-4/20 bg-no-repeat bg-center bg-cover w-full rounded-3xl md:rounded-[60px]`}
                     >
-                        <div className="flex flex-col h-full pt-28 md:~pt-60/96">
+                        <div className="flex flex-col h-full pt-28 gap-6 justify-end pb-6 md:justify-normal md:pb-0 md:gap-4 md:~pt-60/96">
                             <h1 className="~text-2xl/6xl font-bold">YOUNG WARRIOR</h1>
                             <div className="flex w-full justify-between items-center">
                                 <div className="bg-gold-gradient w-fit py-1 px-2 rounded-[47px]">
