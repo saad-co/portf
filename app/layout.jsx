@@ -2,6 +2,8 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Header from "@/components/general/Header";
 import Footer from "@/components/general/Footer";
+import { AlertProvider } from "@/context/AlertContext";
+import AlertContainer from "@/components/AlertContainer";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -44,7 +46,10 @@ export default function RootLayout({ children }) {
         className={`${Arame} ${ArameBold} ${ArameThin} antialiased`}
       >
         <Header />
-        {children}
+        <AlertProvider>
+          <AlertContainer />
+          {children}
+        </AlertProvider>
         <Footer />
       </body>
     </html>

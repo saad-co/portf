@@ -7,7 +7,7 @@ export const Screen08 = () => {
                 <h1 className='text-center ~text-5xl/8xl w-full font-bold ~pt-7/16'>OUR TEAM</h1>
                 <div className='flex flex-col pb-10 md:flex-row items-center justify-evenly md:gap-16 gap-0 w-full'>
                     <div className='flex flex-col items-center gap-10 ~pt-20/52'>
-                        <div className='w-32 h-32 rounded-full bg-white'></div>
+                        <div className='w-72 h-80 rounded-3xl bg-no-repeat bg-cover bg-mubashir bg-center border border-customYellow'></div>
                         <div className='text-center'>
                             <h1 className='text-[#FFD258] ~text-2xl/3xl'>
                                 DR. MIAN MUHAMMAD MUBASHIR
@@ -18,13 +18,13 @@ export const Screen08 = () => {
                         </div>
                     </div>
                     <div className='flex flex-col items-center gap-10 ~pt-20/52'>
-                        <div className='w-32 h-32 rounded-full bg-white'></div>
+                    <div className='w-72 h-80 rounded-3xl bg-no-repeat bg-cover bg-furqan bg-center border border-customYellow'></div>
                         <div className='text-center'>
                             <h1 className='text-[#FFD258] ~text-2xl/3xl'>
                                 MUHAMMAD fURQAAN
                             </h1>
                             <p className='~text-base/xl'>
-                                TECHNICAL LWAD
+                                TECHNICAL LEAD
                             </p>
                         </div>
                     </div>

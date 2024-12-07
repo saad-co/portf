@@ -3,7 +3,7 @@ import { LiaUserEditSolid } from "react-icons/lia";
 import { FaRobot } from "react-icons/fa6";
 import Image from 'next/image';
 
-export const CardComp = ({ imgSrc, title, short, desc, btnText01, btnText02 }) => {
+export const CardComp = ({ blogOwner, imgSrc, title, short, desc, btnText01, btnText02 }) => {
     return (
         <div className="w-full rounded-3xl flex flex-col items-start gap-5">
             <div className="flex border rounded-3xl w-full p-1 border-white flex-col gap-5 md:gap-0 md:flex-row items-center justify-between">
@@ -25,7 +25,7 @@ export const CardComp = ({ imgSrc, title, short, desc, btnText01, btnText02 }) =
                         </div>
                         <div className='flex flex-col items-center justify-center'>
                             <h1 className='text-start w-full ~text-sm/xl font-extrabold'>
-                                MUHAMMAD FURQAAN
+                                {blogOwner}
                             </h1>
                             <p className='text-start w-full text-[8px] md:text-sm'>
                                 NOVEMBER 14, 2024 - 9:08 AM
