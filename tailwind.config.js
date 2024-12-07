@@ -1,6 +1,6 @@
-/** @type {import('tailwindcss').Config} */
 import fluid, { extract, screens, fontSize } from "fluid-tailwind";
-export default {
+/** @type {import('tailwindcss').Config} */
+module.exports = {
   content: {
     files: [
       "./pages/**/*.{js,ts,jsx,tsx,mdx}",
