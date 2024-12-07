@@ -1,9 +1,6 @@
 "use client";
 import { useContext, useEffect } from "react";
 import { AlertContext } from "@/context/AlertContext";
-import Image from "next/image";
-import { FaX } from "react-icons/fa6";
-import { IoClose } from "react-icons/io5";
 
 const Alert = ({ message, type }) => {
   const { hideAlert } = useContext(AlertContext);
@@ -11,7 +8,7 @@ const Alert = ({ message, type }) => {
   useEffect(() => {
     const alertTimeout = setTimeout(() => {
       hideAlert();
-    }, 5000);
+    }, 500);
 
     return () => {
       clearTimeout(alertTimeout);
@@ -25,9 +22,6 @@ const Alert = ({ message, type }) => {
         <div className="pl-4 pt-3 pb-4 text-black">
           {message}
         </div>
-        <button className="p-4" onClick={hideAlert}>
-          <IoClose className="text-black"/>
-        </button>
         <div
           className={`${type === "SUCCESS"
             ? "bg-green-500"

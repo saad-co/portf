@@ -41,7 +41,7 @@ export const Screen09 = () => {
             });
 
             if (response.ok) {
-                showAlert({type: "SUCCESS", message: "Email sent successfully!"})
+                showAlert({ type: "SUCCESS", message: "Email sent successfully!" })
                 setFormData({
                     name: "",
                     email: "",
@@ -51,7 +51,7 @@ export const Screen09 = () => {
                 });
             } else {
                 const data = await response.json();
-                showAlert({type: "ERROR", message: "An error occurred!"})
+                showAlert({ type: "ERROR", message: "An error occurred!" })
                 alert(`Failed to send email: ${data.error}`);
             }
         } catch (error) {
@@ -62,7 +62,7 @@ export const Screen09 = () => {
 
 
     return (
-        <section className="flex flex-col bg-page03-gradient items-center ">
+        <section id='contact' className="flex flex-col bg-page03-gradient items-center ">
             <div className="max-w-7xl ~px-4/8 pb-20 ~gap-8/16 flex flex-col justify-center items-center w-full">
                 <div className='flex flex-col w-full mx-auto pt-20 gap-4'>
                     <h1 className='w-full text-center ~text-3xl/7xl font-bold'>

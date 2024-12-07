@@ -77,6 +77,7 @@ export const Screen03 = () => {
 
     return (
         <section
+            id='services'
             ref={sectionRef}
             className="flex flex-col rounded-t-3xl md:rounded-t-[120px] bg-page03-gradient items-center "
         >

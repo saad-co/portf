@@ -5,6 +5,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { useGSAP } from "@gsap/react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Header() {
     const container = useRef();
@@ -88,15 +89,15 @@ export default function Header() {
                 />
                 <div className="lg:flex hidden items-center ~gap-8/16">
                     <div className="flex items-center ~gap-6/14 ~text-sm/xl font-light">
-                        <p className="cursor-pointer text-customYellow">HOME</p>
-                        <p className="cursor-pointer  text-nowrap">ABOUT US</p>
-                        <p className="cursor-pointer">SERVICES</p>
-                        <p className="cursor-pointer">TECHNOLOGIES</p>
-                        <p className="cursor-pointer">BLOGS</p>
+                        <a href={"#home"} className="cursor-pointer text-customYellow">HOME</a>
+                        <a href={"#about-us"} className="cursor-pointer  text-nowrap">ABOUT US</a>
+                        <a href={"#services"} className="cursor-pointer">SERVICES</a>
+                        <a href={"#technologies"} className="cursor-pointer">TECHNOLOGIES</a>
+                        <a href={"#blogs"} className="cursor-pointer">BLOGS</a>
                     </div>
                 </div>
                 <div className="lg:flex hidden">
-                    <button className="bg-white text-nowrap text-black font-bold text-sm ~px-8/12 ~py-2/3 rounded-[41px]">CONTACT US</button>
+                    <a href="#contact" className="bg-white text-nowrap text-black font-bold text-sm ~px-8/12 ~py-2/3 rounded-[41px]">CONTACT US</a>
                 </div>
                 <div className="lg:hidden block">
                     <IoMenu onClick={togleMenu} className="w-[65px] h-[30px]" />
@@ -113,13 +114,12 @@ export default function Header() {
                     </div>
                 </div>
                 <div id="menu" className="flex min-h-screen text-2xl h-screen flex-col justify-center items-center gap-10">
-                    <p className="text-customYellow">Home</p>
-                    <p>About Us</p>
-                    <p>Services</p>
-                    <p>Technologies</p>
-                    <p>Projects</p>
-                    <p>Blogs</p>
-                    <button>Contact Us</button>
+                    <a href={"#home"} onClick={togleMenu} className="cursor-pointer text-customYellow">HOME</a>
+                    <a href={"#about-us"} onClick={togleMenu} className="cursor-pointer  text-nowrap">ABOUT US</a>
+                    <a href={"#services"} onClick={togleMenu} className="cursor-pointer">SERVICES</a>
+                    <a href={"#technologies"} onClick={togleMenu} className="cursor-pointer">TECHNOLOGIES</a>
+                    <a href={"#blogs"} onClick={togleMenu} className="cursor-pointer">BLOGS</a>
+                    <a href="#contact" onClick={togleMenu}>CONTACT US</a>
                 </div>
             </div>
         </nav>

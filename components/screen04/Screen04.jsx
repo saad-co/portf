@@ -3,7 +3,7 @@ import { i1, i2, i3, i4, i5, i6, i7, i8, i9, i10, i11, i12 } from '@/assets/imag
 import Image from 'next/image';
 export const Screen04 = () => {
     return (
-        <section className="flex bg-[#190202] items-center">
+        <section id='technologies' className="flex bg-[#190202] items-center">
             <div className="max-w-7xl ~px-4/8 mx-auto flex flex-col items-center sm:flex-row sm:justify-between w-full">
                 <div className="flex flex-col justify-center items-center md:items-start w-full md:w-1/3 gap-6 pt-28 md:pt-48 pb-16">
                     <h1 className="text-customYellow w-full ~text-3xl/7xl text-center md:text-start">OUR</h1>

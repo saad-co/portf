@@ -35,7 +35,7 @@ const jsonData = [
 
 export const Screen07 = () => {
     return (
-        <section className="flex flex-col bg-[#1E1E1E] items-center ">
+        <section id='blogs' className="flex flex-col bg-[#1E1E1E] items-center ">
             <div className="max-w-7xl ~px-4/8 pb-20 ~gap-8/16 mx-auto flex flex-col justify-center items-center w-full">
                 <h1 className='font-bold text-center md:text-start ~text-5xl/8xl text-customYellow ~pt-10/24'>
                     <span className='font-normal text-[#BE030C]'>LATEST</span> BLOGS
