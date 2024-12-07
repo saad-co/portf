@@ -1,8 +1,10 @@
 'use client'
-import React, { useEffect, useState } from 'react'
+import { AlertContext } from '@/context/AlertContext';
+import React, { useContext, useEffect, useState } from 'react'
 
 
 export const Screen09 = () => {
+    const { showAlert } = useContext(AlertContext)
     const [formData, setFormData] = useState({
         name: "",
         email: "",
@@ -39,7 +41,7 @@ export const Screen09 = () => {
             });
 
             if (response.ok) {
-                alert("Email sent successfully!");
+                showAlert({type: "SUCCESS", message: "Email sent successfully!"})
                 setFormData({
                     name: "",
                     email: "",
@@ -49,6 +51,7 @@ export const Screen09 = () => {
                 });
             } else {
                 const data = await response.json();
+                showAlert({type: "ERROR", message: "An error occurred!"})
                 alert(`Failed to send email: ${data.error}`);
             }
         } catch (error) {

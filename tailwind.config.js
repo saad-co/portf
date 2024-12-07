@@ -11,15 +11,6 @@ module.exports = {
 	},
 	theme: {
 		extend: {
-			keyframes: {
-				scroll: {
-					"0%": { transform: "translateY(0)" },
-					"90%": { transform: "translateY(-50%)" }, // Adjust for seamless scrolling
-				},
-			},
-			animation: {
-				scroll: "scroll 10s linear infinite",
-			},
 			colors: {
 				background: "var(--background)",
 				foreground: "var(--foreground)",
@@ -50,6 +41,10 @@ module.exports = {
 				furqan: "url('/images/screen08/Furqan.png')",
 			},
 			keyframes: {
+				scroll: {
+					"0%": { transform: "translateY(0)" },
+					"90%": { transform: "translateY(-50%)" }, // Adjust for seamless scrolling
+				},
 				leftRight: {
 					"0%": { transform: "translateX(0)" },
 					"50%": { transform: "translateX(-1rem)" }, // Adjust for seamless scrolling
@@ -79,6 +74,14 @@ module.exports = {
 					"50%": { transform: "translate(-4rem,-6rem)", opacity: 0.2 }, // Adjust for seamless scrolling
 					"100%": { transform: "translate(0, 0)", opacity: 1 },
 				},
+				"alert-keyframes": {
+					from: {
+						transform: "translateX(-100%)",
+					},
+					to: {
+						tranform: "translateX(0%)",
+					},
+				},
 			},
 			animation: {
 				leftRight: "leftRight 2s linear infinite",
@@ -87,6 +90,8 @@ module.exports = {
 				anim2: "anim2 2s linear infinite",
 				anim3: "anim3 2s linear infinite",
 				dotDiagonal: "dotDiagonal 4s linear infinite",
+				scroll: "scroll 10s linear infinite",
+				alert: "alert-keyframes 5s linear",
 			},
 		},
 		screens,

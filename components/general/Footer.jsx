@@ -107,7 +107,15 @@ export const Footer = () => {
                         </div>
                     </div>
                 </div>
-                <div className='border border-white w-full'></div>
+                <div className='border border-white w-full relative flex justify-center'>
+                    <Image
+                        src={"./images/general/footer_small_logo.svg"}
+                        alt='logo hai bsdk'
+                        width={50}
+                        height={10}
+                        className='absolute top-0 w-auto -translate-y-1/2'
+                    />
+                </div>
                 <div className='flex flex-col-reverse gap-4 md:flex-row w-full justify-between'>
                     <p className='w-full text-center md:text-start'>
                         © 2024 ImmersaLynx All rights reserved
