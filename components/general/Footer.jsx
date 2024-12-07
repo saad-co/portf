@@ -110,7 +110,7 @@ export const Footer = () => {
                 <div className='border border-white w-full relative flex justify-center'>
                     <Image
                         src={"./images/general/footer_small_logo.svg"}
-                        alt='logo hai bsdk'
+                        alt='logo hai'
                         width={50}
                         height={10}
                         className='absolute top-0 w-auto -translate-y-1/2'
