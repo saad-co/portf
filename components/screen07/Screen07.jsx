@@ -4,6 +4,7 @@ import CardComp from './CardComp'
 
 const jsonData = [
     {
+        blogOwner: "Muhammad Furqaan",
         imgSrc: firCard,
         title: "How AI is Changing the Gaming World",
         short: "AI in Gaming: A New Era",
@@ -12,6 +13,7 @@ const jsonData = [
         btnText02: "GamingTrends"
     },
     {
+        blogOwner: "DR. MIAN MUHAMMAD MUBASHER",
         imgSrc: secCard,
         title: "The Evolution of Multiplayer Gaming",
         short: "🕹️ The Evolution of Multiplayer Gaming",
@@ -20,6 +22,7 @@ const jsonData = [
         btnText02: "COMPETITONS"
     },
     {
+        blogOwner: "Muhammad Furqaan",
         imgSrc: thirdCard,
         title: "Mobile Gaming: A Billion-Dollar Industry",
         short: "📱 Why Mobile Gaming is Booming",

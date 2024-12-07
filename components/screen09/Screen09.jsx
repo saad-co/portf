@@ -1,5 +1,6 @@
 'use client'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
+
 
 export const Screen09 = () => {
     const [formData, setFormData] = useState({
@@ -9,6 +10,14 @@ export const Screen09 = () => {
         subject: "",
         message: "",
     });
+    const [isButtonDisabled, setIsButtonDisabled] = useState(true);
+
+    // Check if all fields are filled
+    useEffect(() => {
+        const { name, email, subject, message } = formData;
+        const allFieldsFilled = name && email && subject && message;
+        setIsButtonDisabled(!allFieldsFilled); // Disable button if any field is empty
+    }, [formData]);
 
     function inputChangeHandler(e) {
         const { name, value } = e.target; // Destructure name and value from the event
@@ -17,6 +26,37 @@ export const Screen09 = () => {
             [name]: value, // Update the field corresponding to the input's name
         }));
     }
+
+    async function sendMail(e) {
+        e.preventDefault();
+        try {
+            const response = await fetch("/api/sendMail", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(formData),
+            });
+
+            if (response.ok) {
+                alert("Email sent successfully!");
+                setFormData({
+                    name: "",
+                    email: "",
+                    phone: "",
+                    subject: "",
+                    message: "",
+                });
+            } else {
+                const data = await response.json();
+                alert(`Failed to send email: ${data.error}`);
+            }
+        } catch (error) {
+            alert("An error occurred while sending the email. Please try again.");
+            console.error("Error:", error);
+        }
+    }
+
 
     return (
         <section className="flex flex-col bg-page03-gradient items-center ">
@@ -41,6 +81,7 @@ export const Screen09 = () => {
                                     name='name'
                                     value={formData.name}
                                     onChange={inputChangeHandler}
+                                    required
                                     className="px-8 py-4 rounded-2xl w-full text-sm bg-transparent border border-customYellow"
                                 />
                             </div>
@@ -52,6 +93,7 @@ export const Screen09 = () => {
                                     type="email"
                                     name='email'
                                     value={formData.email}
+                                    required
                                     onChange={inputChangeHandler}
                                     className="px-8 py-4 rounded-2xl w-full text-sm bg-transparent border border-customYellow"
                                 />
@@ -64,6 +106,7 @@ export const Screen09 = () => {
                                     type="phone"
                                     name='phone'
                                     value={formData.phone}
+                                    required
                                     onChange={inputChangeHandler}
                                     className="px-8 py-4 rounded-2xl w-full text-sm bg-transparent border border-customYellow"
                                 />
@@ -76,6 +119,7 @@ export const Screen09 = () => {
                                     type="text"
                                     name='subject'
                                     value={formData.subject}
+                                    required
                                     onChange={inputChangeHandler}
                                     className="px-8 py-4 rounded-2xl w-full text-sm bg-transparent border border-customYellow"
                                 />
@@ -89,19 +133,20 @@ export const Screen09 = () => {
                                 type="textarea"
                                 name='message'
                                 value={formData.message}
+                                required
                                 rows={10}
                                 onChange={inputChangeHandler}
                                 className="px-8 py-4 rounded-2xl w-full text-sm bg-transparent border border-customYellow"
                             />
                         </div>
-                    </form>
-                    <div className='w-full mx-auto pt-20 flex justify-center items-center'>
-                        <div className="bg-gold-gradient w-fit py-1 px-2 rounded-[47px]">
-                            <button className="bg-custom-gradient px-6 py-3 rounded-[47px]">
-                                SEND MESSAGE
-                            </button>
+                        <div className='w-full mx-auto pt-20 flex justify-center items-center'>
+                            <div className="bg-gold-gradient w-fit py-1 px-2 rounded-[47px]">
+                                <button disabled={isButtonDisabled} onClick={sendMail} className="bg-custom-gradient px-6 py-3 rounded-[47px]">
+                                    SEND MESSAGE
+                                </button>
+                            </div>
                         </div>
-                    </div>
+                    </form>
                 </div>
             </div>
         </section>
