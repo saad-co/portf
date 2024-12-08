@@ -94,12 +94,14 @@ export default function Header() {
       <div
         id="mblnav"
         className="max-w-7xl ~px-4/8 mx-auto flex items-center justify-between ~pt-6/12">
-        <Image
-          src={"/images/general/logo.svg"}
-          alt="logo"
-          width={200}
-          height={100}
-        />
+        <Link href="/">
+          <Image
+            src={"/images/general/logo.svg"}
+            alt="logo"
+            width={200}
+            height={100}
+          />
+        </Link>
         <div className="lg:flex hidden items-center ~gap-8/16">
           <div className="flex items-center ~gap-6/14 ~text-sm/xl font-light">
             <HeaderLink href="#home" text="HOME" />

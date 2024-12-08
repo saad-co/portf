@@ -17,6 +17,7 @@ module.exports = {
       },
       fontFamily: {
         sans: ["Arame", "sans-serif"],
+        helvetica: ["Helvetica", "sans-serif"],
       },
       backgroundImage: {
         main: "url('/images/Screen01/main.webp')",
@@ -44,7 +45,7 @@ module.exports = {
         },
         leftRight: {
           "0%": { transform: "translateX(0)" },
-          "50%": { transform: "translateX(-1rem)" }, // Adjust for seamless scrolling
+          "50%": { transform: "translateX(-4rem)" }, // Adjust for seamless scrolling
           "100%": { transform: "translateX(0)" },
         },
         playBtn: {
@@ -66,6 +67,25 @@ module.exports = {
           "0%": { transform: "rotate(0)" },
           "100%": { transform: "rotate(360deg)" },
         },
+        animBtns: {
+          "0%": { opacity: 1 },
+          "50%": { opacity: 0 },
+          "100%": { opacity: 1 },
+        },
+        animCloud: {
+          "0%": { transform: "translateX(40%)" },
+          "100%": { transform: "translateX(-80%)" },
+        },
+        animLine: {
+          "0%": {
+            strokeDasharray: "90 10",
+            strokeDashoffset: "100",
+          },
+          "100%": {
+            strokeDasharray: "100 0",
+            strokeDashoffset: "0",
+          },
+        },
         dotDiagonal: {
           "0%": { transform: "translate(0, 0)", opacity: 1 },
           "50%": { transform: "translate(-4rem,-6rem)", opacity: 0.2 }, // Adjust for seamless scrolling
@@ -81,14 +101,20 @@ module.exports = {
         },
       },
       animation: {
-        leftRight: "leftRight 2s linear infinite",
-        playBtn: "playBtn 2s linear infinite",
-        anim1: "anim1 2s linear infinite",
-        anim2: "anim2 2s linear infinite",
-        anim3: "anim3 2s linear infinite",
-        dotDiagonal: "dotDiagonal 4s linear infinite",
+        leftRight: "leftRight 20s linear infinite",
+        playBtn: "playBtn 4s linear infinite",
+        anim1: "anim1 4s linear infinite",
+        anim2: "anim2 4s linear infinite",
+        anim3: "anim3 4s linear infinite",
+        animCloud: "animCloud 20s linear infinite",
+        animStar: "animCloud 24s linear infinite",
+        dotDiagonal: "dotDiagonal 8s linear infinite",
         scroll: "scroll 10s linear infinite",
-        alert: "alert-keyframes 5s linear",
+        alert: "alert-keyframes 3s linear",
+        animBtns1: "animBtns 2s linear infinite",
+        animBtns2: "animBtns 2s .5s linear infinite",
+        animBtns3: "animBtns 2s 1s linear infinite",
+        animLine: "animLine 4s linear infinite",
       },
     },
     screens,
