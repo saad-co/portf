@@ -8,6 +8,7 @@ body {
   background: var(--background);
   overflow-x: hidden;
   background-color: #37080a;
+  scroll-behavior: smooth;
 }
 
 *,
