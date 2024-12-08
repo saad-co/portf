@@ -126,17 +126,21 @@ export default function Header() {
         id="menu-overlay"
         className="opacity-0 fixed top-0 left-0 w-full bg-main bg-no-repeat bg-cover md:hidden">
         <div className="flex justify-between w-full pt-10 items-center px-4">
-          <div className="flex items-center gap-2">
-            <p className="bg-white rounded-full w-7 h-7"></p>
-            <p>Your Logo</p>
-          </div>
+          <Link href="/">
+            <Image
+              src={"/images/general/logo.svg"}
+              alt="logo"
+              width={200}
+              height={100}
+            />
+          </Link>
           <div>
             <MdOutlineCancel onClick={togleMenu} className="text-3xl" />
           </div>
         </div>
         <div
           id="menu"
-          className="flex min-h-screen text-2xl h-screen flex-col justify-center items-center gap-10">
+          className="flex h-[calc(100vh-6rem)] text-2xl flex-col justify-center items-center gap-16">
           <a
             href={"#home"}
             onClick={togleMenu}
