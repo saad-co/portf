@@ -96,7 +96,24 @@ module.exports = {
             transform: "translateX(-100%)",
           },
           to: {
-            tranform: "translateX(0%)",
+            transform: "translateX(0%)",
+          },
+        },
+        footerLogo: {
+          "0%": {
+            transform: "rotateZ(15deg) translateX(0) rotateY(0deg)",
+          },
+          "20%": {
+            transform: "rotateZ(15deg) translateX(-.3rem) rotateY(-40deg)",
+          },
+          "50%": {
+            transform: "rotateZ(15deg) translateX(.1rem) rotateY(0deg)",
+          },
+          "80%": {
+            transform: "rotateZ(15deg) translateX(.5rem) rotateY(40deg)",
+          },
+          "100%": {
+            transform: "rotateZ(15deg) translateX(0) rotateY(0deg)",
           },
         },
       },
@@ -115,6 +132,7 @@ module.exports = {
         animBtns2: "animBtns 2s .5s linear infinite",
         animBtns3: "animBtns 2s 1s linear infinite",
         animLine: "animLine 4s linear infinite",
+        footerLogo: "footerLogo 4s linear infinite",
       },
     },
     screens,

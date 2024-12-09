@@ -43,7 +43,7 @@ const Screen05 = () => {
                 <div className="flex flex-col items-center justify-center gap-4">
                     <h1
                         ref={(el) => (numberRefs.current[0] = el)}
-                        data-target="50"
+                        data-target="30"
                         className="text-customYellow text-8xl"
                     >
                         0
@@ -53,7 +53,7 @@ const Screen05 = () => {
                 <div className="flex flex-col items-center justify-center gap-4">
                     <h1
                         ref={(el) => (numberRefs.current[1] = el)}
-                        data-target="12"
+                        data-target="6"
                         className="text-customYellow text-8xl"
                     >
                         0

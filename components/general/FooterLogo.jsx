@@ -93,22 +93,15 @@ const FooterLogo = () => {
             transform="rotate(-91.4153 28.7694 63.6006)"
             fill="#D9D9D9"
           />
-          <circle
+          {/* <circle
             cx="32.9373"
             cy="22.4546"
             r="11.6832"
             transform="rotate(-1.41528 32.9373 22.4546)"
             fill="#890008"
-          />
-          <ellipse
-            cx="37.2812"
-            cy="18.8149"
-            rx="4.60646"
-            ry="5.52776"
-            transform="rotate(-21.4143 37.2812 18.8149)"
-            fill="#710007"
-          />
-          <g clipPath="url(#clip0_425_118)" className="animate-spin origin-[22%_16%]">
+            className="animate-footerLogo origin-[22%_16%]"
+          /> */}
+          <g clipPath="url(#clip0_425_118)" className="animate-footerLogo origin-[22%_16%]">
             <path
               d="M19.5821 21.3735C19.5821 21.3735 19.2079 21.2775 19.0154 22.0193C18.9002 22.4576 18.8032 23.64 18.9828 24.4719C19.2112 25.5272 19.7396 25.5459 19.7396 25.5459L19.5821 21.3735Z"
               fill="#172435"
