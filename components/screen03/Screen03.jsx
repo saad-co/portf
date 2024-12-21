@@ -13,6 +13,7 @@ import {
   card06,
   card07,
   card08,
+  card09,
 } from "@/assets/images";
 
 // Register ScrollTrigger
@@ -22,50 +23,56 @@ const json = [
   {
     title: "MOBILE GAME DEVELOPMENT",
     description:
-      "We specialize in creating engaging and innovative mobile games that captivate players worldwide. From casual puzzles to high-performance RPGs, our games are tailored to deliver unique experiences on iOS and Android. Let’s bring your mobile gaming vision to life!",
+      "We specialize in creating engaging and innovative mobile games that captivate players worldwide. From casual puzzles to high-performance RPGs, our games are tailored to deliver unique experiences on iOS and Android. Let's bring your mobile gaming vision to life!",
     imgSrc: card01,
   },
   {
-    title: "3D Game Development",
+    title: "PC GAME DEVELOPMENT",
     description:
       "Dive into immersive worlds with our cutting-edge 3D game development services. We craft visually stunning environments and lifelike characters for platforms like PCs, consoles, and mobile devices. Our 3D games redefine how players connect with their favorite genres.",
     imgSrc: card02,
   },
   {
-    title: "VIRTUAL Reality",
+    title: "VIRTUAL REALITY",
     description:
       "Step into the future with our VR gaming solutions, offering fully immersive and interactive experiences. We design VR games that push the boundaries of reality, delivering adventure, simulation, and fitness applications for leading VR platforms like Oculus and HTC Vive.",
     imgSrc: card03,
   },
   {
-    title: "Metaverse Game Development",
+    title: "AUGMENTED REALITY",
     description:
-      "Enter the next generation of gaming with our metaverse solutions. We build expansive virtual worlds where players can socialize, create, and trade. Whether it’s user-generated content or virtual economies, our metaverse games are designed to transform digital experiences.",
+      "Step into the future with our AR gaming solutions, offering fully immersive and interactive experiences. We design VR games that push the boundaries of reality, delivering adventure, simulation, and fitness applications for leading VR platforms like Oculus and HTC Vive.",
     imgSrc: card04,
   },
   {
-    title: "Blockchain and NFT Game Development",
+    title: "EXTENDED REALITY",
     description:
-      "Leverage blockchain technology to offer secure, transparent, and rewarding gaming experiences. Our NFT-based games empower players with ownership of in-game assets and play-to-earn opportunities. We help you shape the future of decentralized gaming.",
+      "Step into the future with our VR gaming solutions, offering fully immersive and interactive experiences. We design VR games that push the boundaries of reality, delivering adventure, simulation, and fitness applications for leading VR platforms like Oculus and HTC Vive.",
     imgSrc: card05,
   },
   {
-    title: "Game Art and Design",
+    title: "METAVERSE SOLUTIONS",
     description:
-      "Unleash creativity with our game art and design services. From character and environment design to animations and UI/UX, we bring your game’s visual story to life. Our art solutions ensure your game captivates players from the first glance.",
+      "Enter the next generation of gaming with our metaverse solutions. We build expansive virtual worlds where players can socialize, create, and trade. Whether it's user-generated content or virtual economies, our metaverse games are designed to transform digital experiences.",
     imgSrc: card06,
   },
   {
-    title: "Extended Reality (XR) Solutions",
+    title: "BLOCKCHAIN AND NFT GAME DEVELOPMENT",
     description:
-      "Step into the future with our VR gaming solutions, offering fully immersive and interactive experiences. We design VR games that push the boundaries of reality, delivering adventure, simulation, and fitness applications for leading VR platforms like Oculus and HTC Vive.",
+      "Leverage blockchain technology to offer secure, transparent, and rewarding gaming experiences. Our NFT-based games empower players with ownership of in-game assets and play-to-earn opportunities. We help you shape the future of decentralized gaming.",
     imgSrc: card07,
   },
   {
-    title: "PC Games Development",
+    title: "GAME ART AND DESIGN",
+    description:
+      "Unleash creativity with our game art and design services. From character and environment design to animations and UI/UX, we bring your game's visual story to life. Our art solutions ensure your game captivates players from the first glance.",
+    imgSrc: card08,
+  },
+  {
+    title: "WEB/CONSOLE GAME DEVELOPMENT",
     description:
       "Step into the future with our VR gaming solutions, offering fully immersive and interactive experiences. We design VR games that push the boundaries of reality, delivering adventure, simulation, and fitness applications for leading VR platforms like Oculus and HTC Vive.",
-    imgSrc: card08,
+    imgSrc: card09,
   },
 ];
 
