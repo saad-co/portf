@@ -32,11 +32,11 @@ module.exports = {
           "linear-gradient(180deg, #FDAA21 0%, #6B0C0C 100%)",
         "page08-gradient":
           "linear-gradient(359.26deg, #650206 0.63%, #FFD258 328.52%)",
-        s5: "url('/images/screen05/bg.png')",
-        card1: "url(/images/screen06/1.png)",
-        card2: "url(/images/screen06/2.png)",
-        card3: "url(/images/screen06/3.png)",
-        card4: "url(/images/screen06/4.png)",
+        s5: "url('/images/screen05/bg.webp')",
+        card1: "url(/images/screen06/ourProjects1.webp)",
+        card2: "url(/images/screen06/ourProjects2.webp)",
+        card3: "url(/images/screen06/ourProjects3.webp)",
+        card4: "url(/images/screen06/ourProjects4.webp)",
       },
       keyframes: {
         scroll: {
